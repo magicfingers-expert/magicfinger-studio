@@ -6,6 +6,11 @@
   <title>About Magic Finger | Digital Architecture &amp; Engineering Studio</title>
   <meta name="description" content="Discover the philosophy, technical rigor, and 24 service disciplines behind Magic Finger. Full-stack development, AI automation, and high-performance server clusters.">
   
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><path d='M18 3L4 10V26L18 33L32 26V10L18 3Z' stroke='%23F5A623' stroke-width='2.5' fill='%23171717'/><circle cx='18' cy='18' r='3.5' fill='%23F7941D'/></svg>">
+  
+  <!-- DNS Prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,7 +99,7 @@
        2. PAGE HERO BANNER
        ========================================================================== -->
   <section class="page-hero">
-    <img src="assets/images/hero/hero-web-dev.jpg" alt="Magic Finger Engineering Studio in Action" class="page-hero-bg">
+    <img decoding="async" src="assets/images/hero/hero-web-dev.jpg" alt="Magic Finger Engineering Studio in Action" class="page-hero-bg" fetchpriority="high">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-content">
       <span class="font-script-accent">Our Heritage &amp; Craft</span>
@@ -144,7 +149,7 @@
         <!-- Visual Composition -->
         <div class="about-visual-column reveal-on-scroll reveal-right">
           <div class="about-image-frame">
-            <img src="assets/images/portfolio/nextjs-saas-dashboard.jpg" alt="Magic Finger Engineering Dashboard" class="about-image-main">
+            <img decoding="async" src="assets/images/portfolio/nextjs-saas-dashboard.jpg" alt="Magic Finger Engineering Dashboard" class="about-image-main">
           </div>
         </div>
       </div>
@@ -330,7 +335,7 @@
   <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Screenshot Proof Lightbox">
     <div class="lightbox-content">
       <button type="button" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
-      <img src="" alt="Verified Production Screenshot" class="lightbox-img">
+      <img decoding="async" src="" alt="Verified Production Screenshot" class="lightbox-img">
       <div class="lightbox-caption">
         <h4 class="lightbox-caption-title">Case Study Screenshot</h4>
         <p class="lightbox-caption-desc">Full resolution in-site production screenshot.</p>
@@ -338,6 +343,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
